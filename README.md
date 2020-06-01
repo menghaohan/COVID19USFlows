@@ -17,7 +17,7 @@
 <br />
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/GeoDSLogo.jpg" alt="Logo" width="80">
+    <img src="images/GeoDSLogo.jpg" alt="Logo" width="100">
   </a>
 
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Data in the U.S. during the COVID-19 Epidemic</h2>
