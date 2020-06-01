@@ -1,14 +1,3 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -60,7 +49,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 The efficiency of reducing human mobility and related activities have been proved for containing the transmission of the global public health threat COVID-19 epidemic. 
 Most governments have responded with policies such as social distancing, lockdown cities, regional travel restrictions. 
@@ -71,20 +59,16 @@ Results of the comparison between our mobility flow dataset and openly available
 Such a high spatio-temporal resolution human mobility flow dataset can not only help monitor real-time epidemic spreading, inform public health policy making, but also deepen our understanding of human behaviors.
 
 
-
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
-
 <!-- GETTING STARTED -->
-## Getting Started
+## Data Processing and Data Descriptor 
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+
+[![Data Processing Work Flow][framework]](https://example.com)
+
+A full description of the methodology used for this study can be found here: .
+
+## Data Records and Field Descriptions
+
 
 ### Prerequisites
 
