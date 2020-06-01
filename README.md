@@ -69,6 +69,49 @@ A full description of the methodology used for this study can be found here: .
 
 ## Data Records and Field Descriptions
 
+```
+
+project
+|-- code
+|-- daily_flows
+|   |-- state2state
+|   |   |-- daily_03_01_state2state.csv
+|   |   |-- daily_03_02_state2state.csv
+|   |   `-- ...
+|   |-- county2county
+|   |   |-- daily_03_01_county2county.csv
+|   |   |-- daily_03_02_county2county.csv
+|   |   `-- ...
+|   `-- ct2ct
+|       |-- 03_01
+|       |   |-- daily_03_01_ct2ct_0.csv
+|       |   |-- daily_03_02_ct2ct_1.csv
+|       |   `-- ...
+|       |-- 03_02
+|       |   |-- daily_03_02_ct2ct_0.csv
+|       |   |-- daily_03_02_ct2ct_1.csv
+|       |   `-- ...
+|       `-- ...
+`-- weekly_flows
+    |-- state2state
+    |   |-- weekly_03_02_state2state.csv
+    |   |-- weekly_03_09_state2state.csv
+    |   `-- ...
+    |-- county2county
+    |   |-- weekly_03_02_county2county.csv
+    |   |-- weekly_03_09_county2county.csv
+    |   `-- ...
+    `-- ct2ct
+        |-- 03_02
+        |   |-- weekly_03_02_ct2ct_0.csv
+        |   |-- weekly_03_02_ct2ct_1.csv
+        |   `-- ...
+        |-- 03_09
+        |   |-- weekly_03_09_ct2ct_0.csv
+        |   |-- weekly_03_09_ct2ct_1.csv
+        |   `-- ...
+        `-- ...
+```
 
 ### Prerequisites
 
