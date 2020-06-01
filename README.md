@@ -16,8 +16,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://geods.geography.wisc.edu/">
+    <img src="images/GeoDSLogo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Data in the U.S. during the COVID-19 Epidemic</h2>
@@ -25,7 +25,7 @@
   <p align="center">
     GeoDS Lab, Department of Geography, University of Wisconsin-Madison.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Website</a>
+    <a href="https://geods.geography.wisc.edu/covid-19-physical-distancing">Website</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
   </p>
