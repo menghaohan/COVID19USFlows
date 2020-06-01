@@ -50,13 +50,12 @@
 ## About The Project
 
 
-The efficiency of reducing human mobility and related activities have been proved for containing the transmission of the global public health threat COVID-19 epidemic. 
-Most governments have responded with policies such as social distancing, lockdown cities, regional travel restrictions. 
-Understanding large scale human mobility patterns is thereby crucial for monitoring and measuring the impacts of non-pharmaceutical interventions during the pandemic.   
-Here, we provide a multiscale mobility flow dataset across the United States since March, 2020.
-By tracking anonymous mobile phone users’ trajectories to various places provided by SafeGraph, both daily and weekly dynamic population flows are computed, aggregated, and inferred at three scales including census tract to census tract, county to county, and state to state, respectively.
-Results of the comparison between our mobility flow dataset and openly available data sources show high consistency, in which proves the reliability of the data quality. 
-Such a high spatio-temporal resolution human mobility flow dataset can not only help monitor real-time epidemic spreading, inform public health policy making, but also deepen our understanding of human behaviors.
+The efficiency of reducing human mobility and social activities has been proved for containing the transmission of the COVID-19 epidemic. Many governments have responded with public health policies and interventions such as social distancing, lockdown cities, stay-at-home orders, and travel restrictions. 
+Understanding human mobility patterns at different geographic scales is crucial for monitoring and measuring the impacts of non-pharmaceutical interventions during the pandemic. 
+In this paper, we introduce a multiscale dynamic human mobility flow dataset across the United States since March 1st, 2020.
+By tracking large-scale anonymous mobile phone users’ visit trajectories to various places provided by SafeGraph, the daily and weekly dynamic population flows are computed, aggregated, and inferred at three geographic scales including census tract to census tract, county to county, and state to state, respectively.
+Results of the comparison between our mobility flow dataset and official survey data source show high consistency, which proves the reliability of the produced data. 
+Such a high spatiotemporal resolution of human mobility flow dataset at different scales over time may not only help monitor epidemic spreading dynamics and inform public health policy making and beyond, but also deepen our understanding of human behaviors and changes under the unprecedented public health crisis. 
 
 
 <!-- GETTING STARTED -->
