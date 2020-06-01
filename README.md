@@ -17,7 +17,7 @@
 <br />
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/GeoDSLogo.png" alt="Logo" width="80" height="80">
+    <img src="images/GeoDSLogo.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Data in the U.S. during the COVID-19 Epidemic</h2>
@@ -62,8 +62,13 @@ Such a high spatio-temporal resolution human mobility flow dataset can not only 
 <!-- GETTING STARTED -->
 ## Data Processing and Data Descriptor 
 
+<p align="center">
+  <a href="https://geods.geography.wisc.edu/">
+    <img src="images/framework.png" alt="framework" >
+  </a>
+</p>
 
-[![Data Processing Work Flow][framework]](https://example.com)
+
 
 A full description of the methodology used for this study can be found here: .
 
