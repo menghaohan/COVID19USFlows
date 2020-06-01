@@ -17,9 +17,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+<!--[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
+[![Stargazers][stars-shield]][stars-url]-->
 [![MIT License][license-shield]][license-url]
 
 
@@ -34,16 +34,11 @@
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Data in the U.S. during the COVID-19 Epidemic</h2>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    GeoDS Lab, Department of Geography, University of Wisconsin-Madison.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">Website</a>
+    ·
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </p>
 
@@ -53,13 +48,9 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
+* [Data Processing and Data Descriptor](#processing)
+* [Data Records and Field Descriptions](#records)
+* [Folder Structure](#folder)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -71,16 +62,15 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+The efficiency of reducing human mobility and related activities have been proved for containing the transmission of the global public health threat COVID-19 epidemic. 
+Most governments have responded with policies such as social distancing, lockdown cities, regional travel restrictions. 
+Understanding large scale human mobility patterns is thereby crucial for monitoring and measuring the impacts of non-pharmaceutical interventions during the pandemic.   
+Here, we provide a multiscale mobility flow dataset across the United States since March, 2020.
+By tracking anonymous mobile phone users’ trajectories to various places provided by SafeGraph, both daily and weekly dynamic population flows are computed, aggregated, and inferred at three scales including census tract to census tract, county to county, and state to state, respectively.
+Results of the comparison between our mobility flow dataset and openly available data sources show high consistency, in which proves the reliability of the data quality. 
+Such a high spatio-temporal resolution human mobility flow dataset can not only help monitor real-time epidemic spreading, inform public health policy making, but also deepen our understanding of human behaviors.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
@@ -188,12 +178,13 @@ Project Link: [https://github.com/GeoDS/COVID19USFlows](https://github.com/GeoDS
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+<!--[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
 [contributors-url]: https://github.com/GeoDS/COVID19USFlows/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
 [forks-url]: https://github.com/GeoDS/COVID19USFlows/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
 [stars-url]: https://github.com/GeoDS/COVID19USFlows/stargazers
+-->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
