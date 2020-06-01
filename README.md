@@ -54,7 +54,7 @@ The efficiency of reducing human mobility and social activities has been proved 
 Understanding human mobility patterns at different geographic scales is crucial for monitoring and measuring the impacts of non-pharmaceutical interventions during the pandemic. 
 In this paper, we introduce a multiscale dynamic human mobility flow dataset across the United States since March 1st, 2020.
 By tracking large-scale anonymous mobile phone users’ visit trajectories to various places provided by SafeGraph, the daily and weekly dynamic population flows are computed, aggregated, and inferred at three geographic scales including census tract to census tract, county to county, and state to state, respectively.
-Results of the comparison between our mobility flow dataset and official survey data source show high consistency, which proves the reliability of the produced data. 
+Results of the comparison between our mobility flow dataset and openly available data sources show high consistency, which proves the reliability of the produced data. 
 Such a high spatiotemporal resolution of human mobility flow dataset at different scales over time may not only help monitor epidemic spreading dynamics and inform public health policy making and beyond, but also deepen our understanding of human behaviors and changes under the unprecedented public health crisis. 
 
 
