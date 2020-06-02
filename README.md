@@ -70,7 +70,7 @@ Such a high spatiotemporal resolution of human mobility flow dataset at differen
 
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="https://geods.geography.wisc.edu/wp-content/uploads/2020/03/safegraph_core_usa_eq_hist.png" alt="Core Places" >
+    <img src="images/safegraph_core_usa_eq_hist.png" alt="Core Places" >
   </a>
 </p>
 
