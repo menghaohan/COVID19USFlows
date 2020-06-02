@@ -61,13 +61,18 @@ Such a high spatiotemporal resolution of human mobility flow dataset at differen
 <!-- GETTING STARTED -->
 ## Data Processing and Data Descriptor 
 
+
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
     <img src="images/framework.png" alt="framework" >
   </a>
 </p>
 
-
+<p align="center">
+  <a href="https://geods.geography.wisc.edu/">
+    <img src="https://geods.geography.wisc.edu/wp-content/uploads/2020/03/safegraph_core_usa_eq_hist.png" alt="Core Places" >
+  </a>
+</p>
 
 A full description of the methodology used for this study can be found here: .
 
