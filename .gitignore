@@ -1,3 +1,5 @@
 code/
+resources/
+paper/
 *.ipynb*
 /*/.ipynb*
