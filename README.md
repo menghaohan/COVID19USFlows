@@ -12,7 +12,7 @@
 [![MIT License][license-shield]][license-url]
 
 
-
+The data processing framework for the mobility flow dataset production.}
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -38,7 +38,7 @@
 
 * [About the Project](#about-the-project)
 * [Data Processing and Data Descriptor](#processing)
-* [Data Records and Field Descriptions](#records)
+* [Field Descriptions](#records)
 * [Folder Structure](#folder)
 * [License](#license)
 * [Contact](#contact)
@@ -61,25 +61,28 @@ Such a high spatiotemporal resolution of human mobility flow dataset at differen
 <!-- GETTING STARTED -->
 ## Data Processing and Data Descriptor 
 
-
+The data processing framework for the mobility flow dataset production:  
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
     <img src="images/framework.png" alt="framework" >
   </a>
 </p>
 
+Spatial distribution of places collected by SafeGraph across the whole United States.  
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
     <img src="images/safegraph_core_usa_eq_hist.png" alt="Core Places" >
   </a>
 </p>
 
+Spatial patterns of mobility flows during March 2nd to March 8th at the county to county level.  
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
     <img src="images/County_03_02.png" alt="Weekly Flows" >
   </a>
 </p>
 
+Spatial patterns of mobility flows during April 6th to April 12th at the county to county level.  
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
     <img src="images/County_04_06.png" alt="Weekly Flows" >
@@ -135,6 +138,7 @@ project
         `-- ...
 ```
 
+A description of all attributes in the database is shown below:   
 geoid\_o - Unique identifier of the origin geographic unit (census tract, county, and state). Type: string.   
 geoid\_d - Unique identifier of the destination geographic unit (census tract, county, and state). Type: string.   
 lat\_o - Latitude of the geometric centroid of the origin unit. Type: float.   
@@ -142,8 +146,8 @@ lng\_o - Longitude of the geometric centroid of the origin unit. Type: float.
 lat\_d - Latitude of the geometric centroid of the destination unit. Type: float.   
 lng\_d - Longitude of the geometric centroid of the destination unit. Type: float.   
 date\_range - Date range of the records. Type: string.   
-visitor\_flows - Estimated number of visitors detected by SafeGraph between the two geographic units (from geoid\_o to geoid\_d), computed and aggregated from weeekly CBG to POI flows. Type: float.   
-pop\_flows - Estimated population flows between the two spatial units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.  
+visitor\_flows - Estimated number of visitors detected by SafeGraph between the two geographic units (from geoid\_o to geoid\_d). Type: float.   
+pop\_flows - Estimated population flows between the two geographic units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.  
 
 
 geoid\_o -  Unique identifier of the origin geographic unit (census tract, county, and state). Type: string.  
@@ -153,7 +157,7 @@ lng\_o - Longitude of the geometric centroid of the origin unit. Type: float.
 lat\_d - Latitude of the geometric centroid of the destination unit. Type: float.  
 lng\_d - Longitude of the geometric centroid of the destination unit. Type: float.  
 date - Date of the records. Type: string.  
-visitor\_flows - Estimated number of visitors between the two geographic units (from geoid\_o to geoid\_d), computed and aggregated from daily CBG to CBG flows. Type: float.  
+visitor\_flows - Estimated number of visitors between the two geographic units (from geoid\_o to geoid\_d). Type: float.  
 pop\_flows - Estimated population flows between the two geographic units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.  
 
 
