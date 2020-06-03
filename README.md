@@ -135,29 +135,26 @@ project
         `-- ...
 ```
 
-### Prerequisites
+geoid\_o - Unique identifier of the origin geographic unit (census tract, county, and state). Type: string. \\
+geoid\_d - Unique identifier of the destination geographic unit (census tract, county, and state). Type: string.\\
+lat\_o - Latitude of the geometric centroid of the origin unit. Type: float.\\
+lng\_o - Longitude of the geometric centroid of the origin unit. Type: float.\\
+lat\_d - Latitude of the geometric centroid of the destination unit. Type: float.\\
+lng\_d - Longitude of the geometric centroid of the destination unit. Type: float.\\
+date\_range - Date range of the records. Type: string.\\
+visitor\_flows - Estimated number of visitors detected by SafeGraph between the two geographic units (from geoid\_o to geoid\_d), computed and aggregated from weeekly CBG to POI flows. Type: float.\\
+pop\_flows - Estimated population flows between the two spatial units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.\\
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
 
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
-```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+geoid\_o -  Unique identifier of the origin geographic unit (census tract, county, and state). Type: string. \\
+geoid\_d - Unique identifier of the destination geographic unit (census tract, county, and state). Type: string.  \\
+lat\_o - Latitude of the geometric centroid of the origin unit. Type: float.\\
+lng\_o - Longitude of the geometric centroid of the origin unit. Type: float.\\
+lat\_d - Latitude of the geometric centroid of the destination unit. Type: float.\\
+lng\_d - Longitude of the geometric centroid of the destination unit. Type: float.\\
+date - Date of the records. Type: string.\\
+visitor\_flows - Estimated number of visitors between the two geographic units (from geoid\_o to geoid\_d), computed and aggregated from daily CBG to CBG flows. Type: float.\\
+pop\_flows - Estimated population flows between the two geographic units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.\\
 
 
 
