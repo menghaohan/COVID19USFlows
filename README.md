@@ -1,14 +1,3 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-<!--[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]-->
 [![MIT License][license-shield]][license-url]
 
 
@@ -27,7 +16,7 @@ The data processing framework for the mobility flow dataset production.}
     <br />
     <a href="https://geods.geography.wisc.edu/covid-19-physical-distancing">Website</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="http://geods.geography.wisc.edu/covid19/King_WA.html">View Demo</a>
   </p>
 </p>
 
@@ -94,8 +83,8 @@ A full description of the methodology used for this study can be found here: .
 
 ## Data Records and Field Descriptions
 
+The folders and files are organized as follows.   
 ```
-
 project
 |-- code
 |-- daily_flows
@@ -138,7 +127,9 @@ project
         `-- ...
 ```
 
-A description of all attributes in the database is shown below:   
+A description of all attributes in the database is shown below:  
+
+#### Weekly Flow Data (folder: weekly_flows)
 geoid\_o - Unique identifier of the origin geographic unit (census tract, county, and state). Type: string.   
 geoid\_d - Unique identifier of the destination geographic unit (census tract, county, and state). Type: string.   
 lat\_o - Latitude of the geometric centroid of the origin unit. Type: float.   
@@ -149,7 +140,7 @@ date\_range - Date range of the records. Type: string.
 visitor\_flows - Estimated number of visitors detected by SafeGraph between the two geographic units (from geoid\_o to geoid\_d). Type: float.   
 pop\_flows - Estimated population flows between the two geographic units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.  
 
-
+#### Daily Flow Data (folder: daily_flows)
 geoid\_o -  Unique identifier of the origin geographic unit (census tract, county, and state). Type: string.  
 geoid\_d - Unique identifier of the destination geographic unit (census tract, county, and state). Type: string.  
 lat\_o - Latitude of the geometric centroid of the origin unit. Type: float.  
@@ -160,36 +151,9 @@ date - Date of the records. Type: string.
 visitor\_flows - Estimated number of visitors between the two geographic units (from geoid\_o to geoid\_d). Type: float.  
 pop\_flows - Estimated population flows between the two geographic units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.  
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
+#### Combine Files
+Please note that at census tract level, since file sizes are larger than 100 MB, we split them into 20 files.  
+To merge them together, we provide merge_files.py 
 
 <!-- LICENSE -->
 ## License
@@ -201,40 +165,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Song Gao - [@gissong](https://twitter.com/gissong) - song.gao at wisc.edu
-Yuhao Kang - [@YuhaoKang](https://twitter.com/YuhaoKang) - yuhao.kang at wisc.edu
+Song Gao - [@gissong](https://twitter.com/gissong) - song.gao at wisc.edu  
+Yuhao Kang - [@YuhaoKang](https://twitter.com/YuhaoKang) - yuhao.kang at wisc.edu  
 
-Project Link: [https://github.com/GeoDS/COVID19USFlows](https://github.com/GeoDS/COVID19USFlows)
+Project Link: [https://github.com/GeoDS/COVID19USFlows](https://github.com/GeoDS/COVID19USFlows)  
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [SafeGraph](https://www.safegraph.com/)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+* [GeoDS Lab](https://shields.io)
 
 ## Funding
 We would like to thank the funding support provided by the National Science Foundation (Award No. BCS-2027375). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. Support for this research was partly provided by the University of Wisconsin - Madison Office of the Vice Chancellor for Research and Graduate Education with funding from the Wisconsin Alumni Research Foundation.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!--[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/GeoDS/COVID19USFlows/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/GeoDS/COVID19USFlows/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/GeoDS/COVID19USFlows/stargazers
--->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[product-screenshot]: images/screenshot.png
+[license-url]: https://github.com/GeoDS/COVID19USFlows/blob/master/LICENSE.txt
