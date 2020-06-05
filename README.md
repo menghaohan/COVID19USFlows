@@ -67,14 +67,14 @@ Spatial distribution of places collected by SafeGraph across the whole United St
 Spatial patterns of mobility flows during March 2nd to March 8th at the county to county level.  
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/County_03_02.png" alt="Weekly Flows" >
+    <img src="images/County_03_02.jpg" alt="Weekly Flows" >
   </a>
 </p>
 
 Spatial patterns of mobility flows during April 6th to April 12th at the county to county level.  
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/County_04_06.png" alt="Weekly Flows" >
+    <img src="images/County_04_06.jpg" alt="Weekly Flows" >
   </a>
 </p>
 
@@ -89,40 +89,40 @@ project
 |-- code
 |-- daily_flows
 |   |-- state2state
-|   |   |-- daily_03_01_state2state.csv
-|   |   |-- daily_03_02_state2state.csv
+|   |   |-- daily_state2state_03_01.csv
+|   |   |-- daily_state2state_03_02.csv
 |   |   `-- ...
 |   |-- county2county
-|   |   |-- daily_03_01_county2county.csv
-|   |   |-- daily_03_02_county2county.csv
+|   |   |-- daily_county2county_03_01.csv
+|   |   |-- daily_county2county_03_02.csv
 |   |   `-- ...
 |   `-- ct2ct
 |       |-- 03_01
-|       |   |-- daily_03_01_ct2ct_0.csv
-|       |   |-- daily_03_02_ct2ct_1.csv
+|       |   |-- daily_ct2ct_03_01_0.csv
+|       |   |-- daily_ct2ct_03_01_1.csv
 |       |   `-- ...
 |       |-- 03_02
-|       |   |-- daily_03_02_ct2ct_0.csv
-|       |   |-- daily_03_02_ct2ct_1.csv
+|       |   |-- daily_ct2ct_03_02_0.csv
+|       |   |-- daily_ct2ct_03_02_1.csv
 |       |   `-- ...
 |       `-- ...
 `-- weekly_flows
     |-- state2state
-    |   |-- weekly_03_02_state2state.csv
-    |   |-- weekly_03_09_state2state.csv
+    |   |-- weekly_state2state_03_02.csv
+    |   |-- weekly_state2state_03_09.csv
     |   `-- ...
     |-- county2county
-    |   |-- weekly_03_02_county2county.csv
-    |   |-- weekly_03_09_county2county.csv
+    |   |-- weekly_county2county_03_02.csv
+    |   |-- weekly_county2county_03_09.csv
     |   `-- ...
     `-- ct2ct
         |-- 03_02
-        |   |-- weekly_03_02_ct2ct_0.csv
-        |   |-- weekly_03_02_ct2ct_1.csv
+        |   |-- weekly_ct2ct_03_02_0.csv
+        |   |-- weekly_ct2ct_03_02_1.csv
         |   `-- ...
         |-- 03_09
-        |   |-- weekly_03_09_ct2ct_0.csv
-        |   |-- weekly_03_09_ct2ct_1.csv
+        |   |-- weekly_ct2ct_03_09_0.csv
+        |   |-- weekly_ct2ct_03_09_1.csv
         |   `-- ...
         `-- ...
 ```
