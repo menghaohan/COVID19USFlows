@@ -26,9 +26,9 @@ The data processing framework for the mobility flow dataset production.}
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* [Data Processing and Data Descriptor](#processing)
-* [Field Descriptions](#records)
-* [Folder Structure](#folder)
+* [Data Processing and Data Descriptor](#data-processing-and-data-descriptor)
+* [Field Descriptions](#field-descriptions)
+* [Folder Structure](#folder-structure)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -127,6 +127,12 @@ project
         `-- ...
 ```
 
+Data provided in this repository are separated into two folders daily_flows and weekly_flows to store daily flow data and weekly flow data.
+The two folders are organized according to the geographic scale, where "ct2ct" indicates flows between census tract to census tract, "county2county" refers to flows between county to county, and "state2state" contains flow data originate from one state to others.
+All files are stored in a csv format, which has been widely used for storing, transferring, and sharing data in the field of data science.
+File names are formatted as data_type_spatial_scale_date.csv., e.g. weekly_ct2ct_03_02.csv and daily_state2state_04_19.csv.
+Specifically, for weekly flow data, the dates in file name refers to the date of the Monday in that week but summarize all mobility flows in that week from Monday to Sunday.
+Since the file size of flow data at census tract level exceeds the GitHub disk limit, each flow data file is split into 20 files.
 A description of all attributes in the database is shown below:  
 
 #### Weekly Flow Data (folder: weekly_flows)
