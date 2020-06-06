@@ -78,6 +78,13 @@ Spatial patterns of mobility flows during April 6th to April 12th at the county 
   </a>
 </p>
 
+Temporal patterns of mobility flows in five metropolitan areas: New York, Los Angeles, Chicago, Seattle, and Houston. A: daily visitor flows; B: daily population flows; C: weekly visitor flows; D: weekly population flows. Date range: daily flow data from March 1st to May 24th, 2020, weekly flow data fromMarch 2nd to May 17th, 2020.  
+<p align="center">
+  <a href="https://geods.geography.wisc.edu/">
+    <img src="images/temporal_patterns.png" alt="Temporal Patterns" >
+  </a>
+</p>
+
 
 A full description of the methodology used for this study can be found here: .
 
@@ -199,7 +206,7 @@ Project Link: [https://github.com/GeoDS/COVID19USFlows](https://github.com/GeoDS
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [SafeGraph](https://www.safegraph.com/)
-* [GeoDS Lab](https://shields.io)
+* [GeoDS Lab](https://geods.geography.wisc.edu/)
 
 ## Funding
 We would like to thank the funding support provided by the National Science Foundation (Award No. BCS-2027375). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. Support for this research was partly provided by the University of Wisconsin - Madison Office of the Vice Chancellor for Research and Graduate Education with funding from the Wisconsin Alumni Research Foundation.
