@@ -162,19 +162,23 @@ pop\_flows - Estimated population flows between the two geographic units (from g
 #### Combine Files
 Please note that at census tract level, since file sizes are larger than 100 MB, we split them into 20 files.  
 To merge them together conveniently, we provide <em>merge_files.py<em> to combine all files under one folder together.  
-Usage:      
+Usage:   
+    
 ```
     python merge_files.py -i [input_folder] -o [output_file_path]
 ```
+    
 -i input folder path  
 -o output file path  
     
 
 For example:  
+    
 ```
     python merge_files.py -i ../weekly_flows/ct2ct/04_06/ -o weekly_ct2ct_04_06.csv
 ```
 
+    
 <!-- LICENSE -->
 ## License
 
