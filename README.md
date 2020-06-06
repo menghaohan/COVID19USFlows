@@ -85,7 +85,7 @@ A full description of the methodology used for this study can be found here: .
 Data provided in this repository are separated into two folders <em>daily_flows</em> and <em>weekly_flows</em> to store daily flow data and weekly flow data.
 The two folders are organized according to the geographic scale, where <em>ct2ct</em> indicates flows between census tract to census tract, <em>county2county</em> refers to flows between county to county, and <em>state2state</em> contains flow data originate from one state to others.
 All files are stored in a csv format, which has been widely used for storing, transferring, and sharing data in the field of data science.
-File names are formatted as <em>{data_type}_{spatial_scale}_{date}.csv</em>, e.g. <em>weekly_ct2ct_03_02.csv</em> and <em>daily_state2state_04_19.csv</em>.
+File names are formatted as <em>{data_type} \_ {spatial_scale}\_ {date}.csv</em>, e.g. <em>weekly_ct2ct_03_02.csv</em> and <em>daily_state2state_04_19.csv</em>.
 Specifically, for weekly flow data, the dates in file name refers to the date of the Monday in that week but summarize all mobility flows in that week from Monday to Sunday.
 Since the file size of flow data at census tract level exceeds the GitHub disk limit, each flow data file is split into 20 files.
 
@@ -93,7 +93,7 @@ Since the file size of flow data at census tract level exceeds the GitHub disk l
 The folders and files are organized as follows.   
 ```
 project
-|-- code
+|-- codes
 |-- daily_flows
 |   |-- state2state
 |   |   |-- daily_state2state_03_01.csv
@@ -161,7 +161,19 @@ pop\_flows - Estimated population flows between the two geographic units (from g
 
 #### Combine Files
 Please note that at census tract level, since file sizes are larger than 100 MB, we split them into 20 files.  
-To merge them together, we provide merge_files.py 
+To merge them together conveniently, we provide <em>merge_files.py<em> to combine all files under one folder together.  
+Usage:      
+```
+    python merge_files.py -i [input_folder] -o [output_file_path]
+```
+-i input folder path  
+-o output file path  
+    
+
+For example:  
+```
+    python merge_files.py -i ../weekly_flows/ct2ct/04_06/ -o weekly_ct2ct_04_06.csv
+```
 
 <!-- LICENSE -->
 ## License
