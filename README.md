@@ -81,7 +81,7 @@ Spatial patterns of mobility flows during April 6th to April 12th at the county 
 Temporal patterns of mobility flows in five metropolitan areas: New York, Los Angeles, Chicago, Seattle, and Houston. A: daily visitor flows; B: daily population flows; C: weekly visitor flows; D: weekly population flows. Date range: daily flow data from March 1st to May 24th, 2020, weekly flow data fromMarch 2nd to May 17th, 2020.  
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/temporal_patterns.jpg" alt="Weekly Flows" >
+    <img src="images/temporal_patterns.png" alt="Temporal Patterns" >
   </a>
 </p>
 
