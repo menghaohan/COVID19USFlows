@@ -57,7 +57,7 @@ The data processing framework for the mobility flow dataset production:
   </a>
 </p>
 
-Spatial distribution of places collected by SafeGraph across the whole United States.  
+Spatial distribution of places collected by [SafeGraph](https://www.safegraph.com/) across the whole United States.  
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
     <img src="images/safegraph_core_usa_eq_hist.png" alt="Core Places" >
