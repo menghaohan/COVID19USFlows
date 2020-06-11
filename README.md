@@ -39,7 +39,7 @@ The data processing framework for the mobility flow dataset production.}
 ## About The Project
 
 
-The efficiency of reducing human mobility and social activities has been proved for containing the transmission of the COVID-19 epidemic. Many governments have responded with public health policies and interventions such as social distancing, lockdown cities, stay-at-home orders, and travel restrictions. 
+The efficiency of reducing human mobility and social activities has been proved for containing the transmission of the COVID-19 epidemic. Many governments have responded with public health interventions such as social distancing, lockdown cities, stay-at-home orders, and travel restrictions. 
 Understanding dynamic human mobility changes and spatial interaction patterns at different geographic scales is crucial for monitoring and measuring the impacts of non-pharmaceutical interventions during the pandemic. 
 In this project, we introduce a multiscale dynamic human mobility flow dataset across the United States starting from March 1st, 2020.
 By tracking millions of anonymous mobile phone users’ visit trajectories to various places provided by [SafeGraph](https://www.safegraph.com/), the daily and weekly dynamic origin-to-destination (O-D) population flows are computed, aggregated, and inferred at three geographic scales including census tract to census tract, county to county, and state to state, respectively.
