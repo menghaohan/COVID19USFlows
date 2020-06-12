@@ -1,7 +1,7 @@
 [![MIT License][license-shield]][license-url]
 
 
-The data processing framework for the mobility flow dataset production.}
+The data processing framework for the mobility flow dataset production.
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
