@@ -25,6 +25,7 @@ The data processing framework for the mobility flow dataset production.
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
+* [Citation](#citation)
 * [About the Project](#about-the-project)
 * [Data Processing and Data Descriptor](#data-processing-and-data-descriptor)
 * [Field Descriptions](#field-descriptions)
@@ -33,6 +34,8 @@ The data processing framework for the mobility flow dataset production.
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
+<!-- Citation -->
+## Citation
 
 
 <!-- ABOUT THE PROJECT -->
