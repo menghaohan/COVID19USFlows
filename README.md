@@ -9,7 +9,7 @@ The data processing framework for the mobility flow dataset production.
     <img src="images/GeoDSLogo.jpg" alt="Logo" width="100">
   </a>
 
-  <h2 align="center">Multiscale Dynamic Human Mobility Flow Data in the U.S. during the COVID-19 Epidemic</h2>
+  <h2 align="center">Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic</h2>
 
   <p align="center">
     GeoDS Lab, Department of Geography, University of Wisconsin-Madison.
@@ -38,7 +38,7 @@ The data processing framework for the mobility flow dataset production.
 ## Citation
 If you use this dataset in your research or applications, please cite this source:
 
-Yuhao Kang, Song Gao, Yunlei Liang, Mingxiao Li, Jinmeng Rao, and Jake Kruse (2020) Multiscale Dynamic Human Mobility Flow Data in the U.S. during the COVID-19. Geospaital Data Science Lab, University of Wisconsin-Madison. Preprint at: https://arxiv.org/abs/2008.12238  
+Yuhao Kang, Song Gao, Yunlei Liang, Mingxiao Li, Jinmeng Rao, and Jake Kruse (2020) Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19. Geospaital Data Science Lab, University of Wisconsin-Madison. Preprint at: https://arxiv.org/abs/2008.12238  
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
