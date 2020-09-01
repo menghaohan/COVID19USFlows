@@ -44,13 +44,7 @@ Yuhao Kang, Song Gao, Yunlei Liang, Mingxiao Li, Jinmeng Rao, and Jake Kruse (20
 ## About The Project
 
 
-The efficiency of reducing human mobility and social activities has been proved for containing the transmission of the COVID-19 epidemic. Many governments have responded with public health interventions such as social distancing, lockdown cities, stay-at-home orders, and travel restrictions. 
-Understanding dynamic human mobility changes and spatial interaction patterns at different geographic scales is crucial for monitoring and measuring the impacts of non-pharmaceutical interventions during the pandemic. 
-In this project, we introduce a multiscale dynamic human mobility flow dataset across the United States starting from March 1st, 2020.
-By tracking millions of anonymous mobile phone users’ visit trajectories to various places provided by [SafeGraph](https://www.safegraph.com/), the daily and weekly dynamic origin-to-destination (O-D) population flows are computed, aggregated, and inferred at three geographic scales including census tract to census tract, county to county, and state to state, respectively.
-Results of the comparison between our mobility flow dataset and openly available data sources show high consistency, which shows the reliability of the produced data. 
-Such a high spatiotemporal resolution of human mobility flow dataset at different scales over time may not only help monitor epidemic spreading dynamics and inform public health policy making and beyond, but also deepen our understanding of human behaviors and changes in the society under the unprecedented public health crisis. 
-
+Understanding dynamic human mobility changes and spatial interaction patterns at different geographic scales is crucial for monitoring and measuring the impacts of non-pharmaceutical interventions (such as stay-at-home orders) during the pandemic. In this data descriptor, we introduce a regularly updated multiscale dynamic human mobility flow dataset across the United States, with data starting from March 1st, 2020. By analysing millions of anonymous mobile phone users’ visit trajectories to various places provided by [SafeGraph](https://www.safegraph.com/), the daily and weekly dynamic origin-to-destination (O-D) population flows are computed, aggregated, and inferred at three geographic scales: census tract, county, and state. There is high correlation between our mobility flow dataset and openly available data sources, which shows the reliability of the produced data. Such a high spatiotemporal resolution human mobility flow dataset at different geographic scales over time may help monitor epidemic spreading dynamics, inform public health policy, and deepen our understanding of human behaviour changes under the unprecedented public health crisis. This up-to-date O-D flow open data can support many other social sensing and transportation applications.
 
 <!-- GETTING STARTED -->
 ## Data Processing and Data Descriptor
@@ -83,15 +77,15 @@ Spatial patterns of mobility flows during April 6th to April 12th at the county 
   </a>
 </p>
 
-Temporal patterns of mobility flows in five metropolitan areas: New York, Los Angeles, Chicago, Seattle, and Houston. A: daily visitor flows; B: daily population flows; C: weekly visitor flows; D: weekly population flows. Date range: daily flow data from March 1st to May 24th, 2020, weekly flow data fromMarch 2nd to May 17th, 2020.  
+Temporal patterns of mobility flows in five metropolitan areas: New York, Los Angeles, Chicago, Seattle, and Houston. A: daily visitor flows; B: daily population flows; C: weekly visitor flows; D: weekly population flows. Date range: from March 2nd to May 31st, 2020. 
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/temporal_patterns.png" alt="Temporal Patterns" >
+    <img src="images/temporal_patterns.jpg" alt="Temporal Patterns" >
   </a>
 </p>
 
 
-A full description of the methodology used for this study can be found here: .
+A full description of the methodology used for this study can be found here: [https://arxiv.org/abs/2008.12238](https://arxiv.org/abs/2008.12238).
 
 ## Folder Structure
 Data provided in this repository are separated into two folders <em>daily_flows</em> and <em>weekly_flows</em> to store daily flow data and weekly flow data.
