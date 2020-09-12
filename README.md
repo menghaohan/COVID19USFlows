@@ -9,7 +9,7 @@ The data processing framework for the mobility flow dataset production.
     <img src="images/GeoDSLogo.jpg" alt="Logo" width="200">
   </a>
     <a href="https://www.safegraph.com/">
-    <img src="images/safegraph.png alt="Logo" width="200">
+    <img src="images/safegraph.png" alt="Logo" width="200">
   </a>
 
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic</h2>
