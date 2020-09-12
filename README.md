@@ -6,7 +6,7 @@ The data processing framework for the mobility flow dataset production.
 <br />
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/logo.png" alt="Logo" width="200">
+    <img src="images/logo.jpg" alt="Logo" width="200">
 
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic</h2>
 
