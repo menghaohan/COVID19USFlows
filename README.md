@@ -6,11 +6,7 @@ The data processing framework for the mobility flow dataset production.
 <br />
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/GeoDSLogo.jpg" alt="Logo" width="200">
-  </a>
-    <a href="https://www.safegraph.com/">
-    <img src="images/safegraph.png" alt="Logo" width="200">
-  </a>
+    <img src="images/logo.png" alt="Logo" width="200">
 
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic</h2>
 
