@@ -37,7 +37,7 @@ The data processing framework for the mobility flow dataset production.
 ## Citation
 If you use this dataset in your research or applications, please cite this source:
 
-Yuhao Kang, Song Gao, Yunlei Liang, Mingxiao Li, Jinmeng Rao, and Jake Kruse (2020) Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic. Scientific Data. Preprint at: https://arxiv.org/abs/2008.12238  
+Yuhao Kang, Song Gao, Yunlei Liang, Mingxiao Li, Jinmeng Rao, and Jake Kruse (2020) Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic. *Scientific Data*. Preprint at: https://arxiv.org/abs/2008.12238  
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
