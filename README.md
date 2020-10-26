@@ -165,37 +165,71 @@ pop\_flows - Estimated population flows between the two geographic units (from g
 
 ## Code Usage
 **How to Download Data?**
-
-#### Download Files
 We provide a set of tools for downloading data.  
-To download daily patterns at different spatial scales, you can use <em>codes/download_daily_data.py</em>.  
+
+#### Download Daily Patterns
+To download daily patterns at different spatial scales, you can use <em>codes/download_daily_data.py</em> with the specified data range.
 Usage:
     
 ```
-    python download_daily_data.py --start\_month [start_month] --start\_day [start_day] --end\_month [end\_month] --end\_day [end\_day] --output\_folder [output\_folder] --ct --county --state
+    python download_daily_data.py --start_month [start_month] --start_day [start_day] --end_month [end_month] --end_day [end_day] --output_folder [output_folder] --ct --county --state
 ```
 
 ```
---start\_month required, month of the start date
---start\_day required, day of the start date
---end\_month  month of the end date
---end\_day day of the start date
---output\_folder required, output folder
+--start_month required, month of the start date
+--start_day required, day of the start date
+--end_month  month of the end date
+--end_day day of the start date
+--output_folder required, output folder
 --ct download data at the census tract level
 --county download data at the county level
 --state download data at the state level
 ```
 
 Example:  
-Download county level data of March 1st to the \textit{daily\_flows} folder.
+Download county level data of March 1st to the <em>daily_flows</em> folder.
 ```
-    python download_daily_data.py --start\_month 3 --start\_day 1 --output\_folder daily\_flows  --county 
+    python download_daily_data.py --start_month 3 --start_day 1 --output_folder daily_flows  --county 
 ```
 
-Download state level and census tract level data from March 1st to March 10th to the \textit{daily\_flows} folder.
+Download state level and census tract level data from March 1st to March 10th to the <em>daily_flows</em> folder.
 ```
-    python download_daily_data.py --start\_month 3 --start\_day 1 --end\_month 3 --end\_day 10 --output\_folder daily\_flows  --state --ct
+    python download_daily_data.py --start_month 3 --start_day 1 --end_month 3 --end_day 10 --output_folder daily_flows --state --ct
 ```
+
+#### Download Weekly Patterns
+To download weekly patterns at different spatial scales, you can use <em>codes/download_weekly_data.py</em> with the specified data range.  
+**Please note that the start date and the end date must be Monday.**  
+Usage:
+    
+```
+    python download_weekly_data.py --start_month [start_month] --start_day [start_day] --end_month [end_month] --end_day [end_day] --output_folder [output_folder] --ct --county --state
+```
+
+```
+--start_month required, month of the start date (must be a Monday)
+--start_day required, day of the start date (must be a Monday)
+--end_month  month of the end date (must be a Monday)
+--end_day day of the start date (must be a Monday)
+--output_folder required, output folder
+--ct download data at the census tract level
+--county download data at the county level
+--state download data at the state level
+```
+
+Example:  
+Download county level data of the week of March 2nd-8th to the <em>weekly_flows</em> folder.
+```
+    python download_weekly_data.py --start_month 3 --start_day 2 --output_folder weekly_flows  --county 
+```
+
+Download state level and census tract level data from the week of March 2st-8th to the week of March 23th-29th to the <em>weekly_flows</em> folder.
+```
+    python download_weekly_data.py --start_month 3 --start_day 2 --end_month 3 --end_day 23 --output_folder weekly_flows --state --ct
+```
+
+
+
 
 #### Combine Files
 Please note that at census tract level, since file sizes are larger than 100 MB, we split them into 20 files.  

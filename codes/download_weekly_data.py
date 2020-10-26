@@ -6,11 +6,11 @@ import argparse
 
 
 parser = argparse.ArgumentParser(description='Start month, start day, and output_folder are necessary')
-parser.add_argument('--start_month', type=str, default=True, help='Start month')
-parser.add_argument('--start_day', type=str, default=True, help='Start day')
+parser.add_argument('--start_month', type=str, required=True, help='Start month')
+parser.add_argument('--start_day', type=str, required=True, help='Start day')
 parser.add_argument('--end_month', type=str, help='End month')
 parser.add_argument('--end_day', type=str, help='End day')
-parser.add_argument('--output_folder', type=str, default=True, help='Output folder: ./')
+parser.add_argument('--output_folder', type=str, required=True, help='Output folder: ./')
 parser.add_argument('--ct', action = 'store_true', help='ct2ct')
 parser.add_argument('--county', action = 'store_true', help='county2county')
 parser.add_argument('--state', action = 'store_true', help='state2state')
