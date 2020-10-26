@@ -178,8 +178,8 @@ Usage:
 ```
 --start_month required, month of the start date
 --start_day required, day of the start date
---end_month  month of the end date
---end_day day of the start date
+--end_month  month of the end date, default is the start_month
+--end_day day of the start date, default is the start_day
 --output_folder required, output folder
 --ct download data at the census tract level
 --county download data at the county level
@@ -209,8 +209,8 @@ Usage:
 ```
 --start_month required, month of the start date (must be a Monday)
 --start_day required, day of the start date (must be a Monday)
---end_month  month of the end date (must be a Monday)
---end_day day of the start date (must be a Monday)
+--end_month  month of the end date (must be a Monday), default is the start_month
+--end_day day of the start date (must be a Monday), default is the end_day
 --output_folder required, output folder
 --ct download data at the census tract level
 --county download data at the county level
