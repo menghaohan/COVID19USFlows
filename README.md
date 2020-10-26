@@ -168,7 +168,7 @@ pop\_flows - Estimated population flows between the two geographic units (from g
 We provide a set of tools for downloading data.  
 
 #### Download Daily Patterns
-To download daily patterns at different spatial scales, you can use <em>codes/download_daily_data.py</em> with the specified data range.
+To download daily patterns at different spatial scales, you can use <em>codes/download_daily_data.py</em> with the specified data range.  
 Usage:
     
 ```
@@ -229,8 +229,6 @@ Download state level and census tract level data from the week of March 2st-8th 
 ```
 
 
-
-
 #### Combine Files
 Please note that at census tract level, since file sizes are larger than 100 MB, we split them into 20 files.  
 To merge them together conveniently, we provide <em>codes/merge_files.py</em> to combine all files under one folder together.  
@@ -240,11 +238,13 @@ Usage:
     python merge_files.py -i [input_folder] -o [output_file_path]
 ```
     
+```
 -i input folder path  
 -o output file path  
-    
+```
 
-For example:  
+Example:  
+Combine all census tract files under the folder <em>../weekly_flows/ct2ct/04_06</em> to a single file <em>weekly_ct2ct_04_06.csv</em>
     
 ```
     python merge_files.py -i ../weekly_flows/ct2ct/04_06/ -o weekly_ct2ct_04_06.csv
