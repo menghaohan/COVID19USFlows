@@ -1,7 +1,5 @@
 [![MIT License][license-shield]][license-url]
 
-
-The data processing framework for the mobility flow dataset production.
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -29,6 +27,7 @@ The data processing framework for the mobility flow dataset production.
 * [Data Processing and Data Descriptor](#data-processing-and-data-descriptor)
 * [Field Descriptions](#field-descriptions)
 * [Folder Structure](#folder-structure)
+* [How to Download Data?](#code-usage)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -164,9 +163,43 @@ date - Date of the records. Type: string.
 visitor\_flows - Estimated number of visitors between the two geographic units (from geoid\_o to geoid\_d). Type: float.  
 pop\_flows - Estimated population flows between the two geographic units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.  
 
+## Code Usage
+**How to Download Data?**
+
+#### Download Files
+We provide a set of tools for downloading data.  
+To download daily patterns at different spatial scales, you can use <em>codes/download_daily_data.py</em>.  
+Usage:
+    
+```
+    python download_daily_data.py --start\_month [start_month] --start\_day [start_day] --end\_month [end\_month] --end\_day [end\_day] --output\_folder [output\_folder] --ct --county --state
+```
+
+```
+--start\_month required, month of the start date
+--start\_day required, day of the start date
+--end\_month  month of the end date
+--end\_day day of the start date
+--output\_folder required, output folder
+--ct download data at the census tract level
+--county download data at the county level
+--state download data at the state level
+```
+
+Example:  
+Download county level data of March 1st to the \textit{daily\_flows} folder.
+```
+    python download_daily_data.py --start\_month 3 --start\_day 1 --output\_folder daily\_flows  --county 
+```
+
+Download state level and census tract level data from March 1st to March 10th to the \textit{daily\_flows} folder.
+```
+    python download_daily_data.py --start\_month 3 --start\_day 1 --end\_month 3 --end\_day 10 --output\_folder daily\_flows  --state --ct
+```
+
 #### Combine Files
 Please note that at census tract level, since file sizes are larger than 100 MB, we split them into 20 files.  
-To merge them together conveniently, we provide <em>merge_files.py</em> to combine all files under one folder together.  
+To merge them together conveniently, we provide <em>codes/merge_files.py</em> to combine all files under one folder together.  
 Usage:   
     
 ```
