@@ -168,7 +168,7 @@ pop\_flows - Estimated population flows between the two geographic units (from g
 We provide a set of tools for downloading data.  
 
 #### Download Daily Patterns
-To download daily patterns at different spatial scales, you can use <em>codes/download_daily_data.py</em> with the specified data range.  
+To download daily patterns at different spatial scales, you can use <em>codes/download_daily_data.py</em> with the specified date range.  
 Usage:
     
 ```
@@ -176,8 +176,8 @@ Usage:
 ```
 
 ```
---start_month required, month of the start date
---start_day required, day of the start date
+--start_month (required parameter), month of the start date
+--start_day (required parameter), day of the start date
 --end_month  month of the end date, default is the start_month
 --end_day day of the start date, default is the start_day
 --output_folder required, output folder
