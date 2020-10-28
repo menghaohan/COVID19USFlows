@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/logo.jpg" alt="Logo" width="400">
+    <img src="images/geods_safegraph_nsf_logo.jpg" alt="Logo" width="400">
 
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic</h2>
 
