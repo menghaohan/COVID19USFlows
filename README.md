@@ -265,7 +265,7 @@ Download state level and census tract level data from the week of March 2st-8th 
 
 #### Combine Files
 Please note that at census tract level, since file sizes are larger than 100 MB, we split them into 20 files.  
-To merge them together conveniently, we provide <em>codes/merge_files.py</em> to combine all files under one folder together.  
+To merge them together conveniently, we provide <em>[codes/merge_files.py](https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/codes/merge_files.py)</em> to combine all files under one folder together.  
 Usage:   
     
 ```
