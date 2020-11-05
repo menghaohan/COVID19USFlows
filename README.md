@@ -38,6 +38,21 @@ If you use this dataset in your research or applications, please cite this sourc
 
 Yuhao Kang, Song Gao, Yunlei Liang, Mingxiao Li, Jinmeng Rao, and Jake Kruse (2020) Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic. *Scientific Data*. Preprint at: https://arxiv.org/abs/2008.12238  
 
+Some other papers may fit your interests:  
+Song Gao, Jinmeng Rao, Yuhao Kang, Yunlei Liang, Jake Kruse, Dorte Dopfer, Ajay K. Sethi, Juan Francisco Mandujano Reyes, Brian S. Yandell, and Jonathan A. Patz (2020) Association of Mobile Phone Location Data Indications of Travel and Stay-at-home Mandates with Covid-19 Infection Rates in the US. *JAMA Network Open*, 3(9), e2020485-e2020485.
+
+
+Song Gao, Jinmeng Rao, Yuhao Kang, Yunlei Liang, and Jake Kruse (2020) Mapping County-Level Mobility Pattern Changes in the United States in Response to COVID-19. SIGSPATIAL Special 12(1): 16-26.
+
+Donghai Liang, Liuhua Shi, Jingxuan Zhao, Pengfei Liu, Joel Schwartz, Song Gao, Jeremy Sarnat, Yang Liu, Stefanie Ebelt, Noah Scovronick, Howard H Chang (2020) Urban Air Pollution May Enhance COVID-19 Case-Fatality and Mortality Rates in the United States. The Innovation. 
+
+#Chen, Shi, Qin Li, Song Gao, Yuhao Kang, and Xun Shi. "Mitigating COVID-19 outbreak via high testing capacity and strong transmission-intervention in the United States." medRxiv (2020).
+
+
+#Hou, Xiao, Song Gao, Qin Li, Yuhao Kang, Nan Chen, Kaiping Chen, Jinmeng Rao, Jordan S. Ellenberg, and Jonathan A. Patz. "Intra-county modeling of COVID-19 infection with human mobility: assessing spatial heterogeneity with business traffic, age and race." medRxiv (2020).
+
+
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
