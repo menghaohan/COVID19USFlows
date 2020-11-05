@@ -28,7 +28,6 @@
 * [Field Descriptions](#field-descriptions)
 * [Folder Structure](#folder-structure)
 * [How to Download Data?](#code-usage)
-** [How to Download Data?](#code-usage)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
