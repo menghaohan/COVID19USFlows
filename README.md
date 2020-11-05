@@ -167,6 +167,24 @@ pop\_flows - Estimated population flows between the two geographic units (from g
 **How to Download Data?**
 We provide a set of tools for downloading data.  
 
+#### Command Line
+If you are Linux/Mac users, you can use **wget/curl** to download data files.
+```
+wget https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/{data_type}_flows/{spatial_scale}/{data_type}_{spatial_scale}_{date}.csv
+```
+
+```
+curl https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/{data_type}_flows/{spatial_scale}/{data_type}_{spatial_scale}_{date}.csv --output output_file.csv
+```
+
+Example:  
+Download daily county level data of March 1st using **wget**.
+```
+wget https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/daily_flows/county2county/daily_county2county_03_01.csv
+```
+
+You can also use the following python codes to download daily patterns and weekly patterns.
+
 #### Download Daily Patterns
 To download daily patterns at different spatial scales, you can use <em>[codes/download_daily_data.py](https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/codes/download_daily_data.py)</em> with the specified date range.  
 Usage:
