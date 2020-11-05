@@ -168,7 +168,7 @@ pop\_flows - Estimated population flows between the two geographic units (from g
 We provide a set of tools for downloading data.  
 
 #### Download Daily Patterns
-To download daily patterns at different spatial scales, you can use <em>codes/download_daily_data.py</em> with the specified date range.  
+To download daily patterns at different spatial scales, you can use <em>[codes/download_daily_data.py](https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/codes/download_daily_data.py)</em> with the specified date range.  
 Usage:
     
 ```
@@ -198,7 +198,7 @@ Download state level and census tract level data from March 1st to March 10th to
 ```
 
 #### Download Weekly Patterns
-To download weekly patterns at different spatial scales, you can use <em>codes/download_weekly_data.py</em> with the specified data range.  
+To download weekly patterns at different spatial scales, you can use <em>[codes/download_weekly_data.py](https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/codes/download_weekly_data.py)</em> with the specified data range.  
 **Please note that the start date and the end date must be Monday.**  
 Usage:
     
