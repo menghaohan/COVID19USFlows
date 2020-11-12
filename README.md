@@ -36,7 +36,9 @@
 ## Citation
 If you use this dataset in your research or applications, please cite this source:
 
-Yuhao Kang, Song Gao, Yunlei Liang, Mingxiao Li, Jinmeng Rao, and Jake Kruse (2020) Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic. *Scientific Data*. DOI: 10.1038/s41597-020-00734-5. Preprint at: https://arxiv.org/abs/2008.12238  
+
+Kang, Y., Gao, S., Liang, Y. et al. Multiscale dynamic human mobility flow dataset in the U.S. during the COVID-19 epidemic. *Scientific Data* 7, 390 (2020). https://doi.org/10.1038/s41597-020-00734-5
+    
 
 ```
 @article{kang2020multiscale,
