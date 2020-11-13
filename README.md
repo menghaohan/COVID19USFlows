@@ -45,8 +45,8 @@ Kang, Y., Gao, S., Liang, Y. et al. Multiscale dynamic human mobility flow datas
   title     = {Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic},
   author    = {Kang, Yuhao and Gao, Song and Liang, Yunlei and Li, Mingxiao and Kruse, Jake},
   journal   = {Scientific Data},
-  volumn    = {0},
-  issue     = {0},
+  volumn    = {7},
+  issue     = {390},
   pages     = {1--13},
   year = {2020}
 }
