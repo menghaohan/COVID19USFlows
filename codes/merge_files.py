@@ -1,3 +1,6 @@
+# encoding: utf-8
+# copyright: GeoDS Lab, University of Wisconsin-Madison
+# authors: Yuhao Kang, Song Gao, Jinmeng Rao
 import os
 import pandas as pd
 import argparse

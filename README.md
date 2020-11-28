@@ -1,12 +1,10 @@
 [![MIT License][license-shield]][license-url]
 
-
-The data processing framework for the mobility flow dataset production.
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://geods.geography.wisc.edu/">
-    <img src="images/logo.jpg" alt="Logo" width="400">
+    <img src="images/geods_safegraph_nsf_logo.jpg" alt="Logo" width="400">
 
   <h2 align="center">Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic</h2>
 
@@ -29,6 +27,7 @@ The data processing framework for the mobility flow dataset production.
 * [Data Processing and Data Descriptor](#data-processing-and-data-descriptor)
 * [Field Descriptions](#field-descriptions)
 * [Folder Structure](#folder-structure)
+* [How to Download Data?](#code-usage)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -37,13 +36,27 @@ The data processing framework for the mobility flow dataset production.
 ## Citation
 If you use this dataset in your research or applications, please cite this source:
 
-Yuhao Kang, Song Gao, Yunlei Liang, Mingxiao Li, Jinmeng Rao, and Jake Kruse (2020) Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic. *Scientific Data*. Preprint at: https://arxiv.org/abs/2008.12238  
+
+Kang, Y., Gao, S., Liang, Y.  Li, M., Rao, J. and Kruse, J. Multiscale dynamic human mobility flow dataset in the U.S. during the COVID-19 epidemic. *Scientific Data* 7, 390 (2020). https://doi.org/10.1038/s41597-020-00734-5
+    
+
+```
+@article{kang2020multiscale,
+  title     = {Multiscale Dynamic Human Mobility Flow Dataset in the U.S. during the COVID-19 Epidemic},
+  author    = {Kang, Yuhao and Gao, Song and Liang, Yunlei and Li, Mingxiao and Kruse, Jake},
+  journal   = {Scientific Data},
+  volumn    = {7},
+  issue     = {390},
+  pages     = {1--13},
+  year = {2020}
+}
+```
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 
-Understanding dynamic human mobility changes and spatial interaction patterns at different geographic scales is crucial for monitoring and measuring the impacts of non-pharmaceutical interventions (such as stay-at-home orders) during the pandemic. In this data descriptor, we introduce a regularly updated multiscale dynamic human mobility flow dataset across the United States, with data starting from March 1st, 2020. By analysing millions of anonymous mobile phone users’ visit trajectories to various places provided by [SafeGraph](https://www.safegraph.com/), the daily and weekly dynamic origin-to-destination (O-D) population flows are computed, aggregated, and inferred at three geographic scales: census tract, county, and state. There is high correlation between our mobility flow dataset and openly available data sources, which shows the reliability of the produced data. Such a high spatiotemporal resolution human mobility flow dataset at different geographic scales over time may help monitor epidemic spreading dynamics, inform public health policy, and deepen our understanding of human behaviour changes under the unprecedented public health crisis. This up-to-date O-D flow open data can support many other social sensing and transportation applications.
+Understanding dynamic human mobility changes and spatial interaction patterns at different geographic scales is crucial for monitoring and measuring the impacts of non-pharmaceutical interventions (such as stay-at-home orders) during the pandemic. In this data descriptor, we introduce an up-to-date multiscale dynamic human mobility flow dataset across the United States, with data starting from January 1st, 2020. By analyzing millions of anonymous mobile phone users’ visit trajectories to various places provided by [SafeGraph](https://www.safegraph.com/), the daily and weekly dynamic origin-to-destination (O-D) population flows are computed, aggregated, and inferred at three geographic scales: census tract, county, and state. There is high correlation between our mobility flow dataset and openly available data sources, which shows the reliability of the produced data. Such a high spatiotemporal resolution human mobility flow dataset at different geographic scales over time may help monitor epidemic spreading dynamics, inform public health policy, and deepen our understanding of human behavior changes under the unprecedented public health crisis. This up-to-date O-D flow open data can support many other social sensing and transportation applications.
 
 <!-- GETTING STARTED -->
 ## Data Processing and Data Descriptor
@@ -164,20 +177,106 @@ date - Date of the records. Type: string.
 visitor\_flows - Estimated number of visitors between the two geographic units (from geoid\_o to geoid\_d). Type: float.  
 pop\_flows - Estimated population flows between the two geographic units (from geoid\_o to geoid\_d), inferred from visitor\_flows. Type: float.  
 
+## Code Usage
+**How to Download Data?**
+We provide a set of tools for downloading data.  
+
+#### Command Line
+If you are Linux/Mac users, you can use **wget/curl** to download data files.
+```
+wget https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/{data_type}_flows/{spatial_scale}/{data_type}_{spatial_scale}_{date}.csv
+```
+
+```
+curl https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/{data_type}_flows/{spatial_scale}/{data_type}_{spatial_scale}_{date}.csv --output output_file.csv
+```
+
+Example:  
+Download daily county level data of March 1st using **wget**.
+```
+wget https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/daily_flows/county2county/daily_county2county_03_01.csv
+```
+
+You can also use the following python codes to download daily patterns and weekly patterns.
+
+#### Download Daily Patterns
+To download daily patterns at different spatial scales, you can use <em>[codes/download_daily_data.py](https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/codes/download_daily_data.py)</em> with the specified date range.  
+Usage:
+    
+```
+    python download_daily_data.py --start_month [start_month] --start_day [start_day] --end_month [end_month] --end_day [end_day] --output_folder [output_folder] --ct --county --state
+```
+
+```
+--start_month (required parameter), month of the start date
+--start_day (required parameter), day of the start date
+--end_month  month of the end date, default is the start_month
+--end_day    day of the start date, default is the start_day
+--output_folder (required), output folder
+--ct download data at the census tract level
+--county download data at the county level
+--state download data at the state level
+```
+
+Example:  
+Download county level data of March 1st to the <em>daily_flows</em> folder.
+```
+    python download_daily_data.py --start_month 3 --start_day 1 --output_folder daily_flows  --county 
+```
+
+Download state level and census tract level data from March 1st to March 10th to the <em>daily_flows</em> folder.
+```
+    python download_daily_data.py --start_month 3 --start_day 1 --end_month 3 --end_day 10 --output_folder daily_flows --state --ct
+```
+
+#### Download Weekly Patterns
+To download weekly patterns at different spatial scales, you can use <em>[codes/download_weekly_data.py](https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/codes/download_weekly_data.py)</em> with the specified data range.  
+**Please note that the start date and the end date must be Monday.**  
+Usage:
+    
+```
+    python download_weekly_data.py --start_month [start_month] --start_day [start_day] --end_month [end_month] --end_day [end_day] --output_folder [output_folder] --ct --county --state
+```
+
+```
+--start_month (required parameter), month of the start date (must be a Monday)
+--start_day (required parameter), day of the start date (must be a Monday)
+--end_month  month of the end date (must be a Monday), default is the start_month
+--end_day    day of the start date (must be a Monday), default is the end_day
+--output_folder (required parameter), output folder
+--ct download data at the census tract level
+--county download data at the county level
+--state download data at the state level
+```
+
+Example:  
+Download county level data of the week of March 2nd-8th to the <em>weekly_flows</em> folder.
+```
+    python download_weekly_data.py --start_month 3 --start_day 2 --output_folder weekly_flows  --county 
+```
+
+Download state level and census tract level data from the week of March 2st-8th to the week of March 23th-29th to the <em>weekly_flows</em> folder.
+```
+    python download_weekly_data.py --start_month 3 --start_day 2 --end_month 3 --end_day 23 --output_folder weekly_flows --state --ct
+```
+
+
 #### Combine Files
 Please note that at census tract level, since file sizes are larger than 100 MB, we split them into 20 files.  
-To merge them together conveniently, we provide <em>merge_files.py</em> to combine all files under one folder together.  
+To merge them together conveniently, we provide <em>[codes/merge_files.py](https://raw.githubusercontent.com/GeoDS/COVID19USFlows/master/codes/merge_files.py)</em> to combine all files under one folder together.  
 Usage:   
     
 ```
     python merge_files.py -i [input_folder] -o [output_file_path]
 ```
     
+```
 -i input folder path  
 -o output file path  
-    
+```
 
-For example:  
+Example:  
+Combine all census tract files under the folder <em>../weekly_flows/ct2ct/04_06</em> to a single file <em>weekly_ct2ct_04_06.csv</em>
     
 ```
     python merge_files.py -i ../weekly_flows/ct2ct/04_06/ -o weekly_ct2ct_04_06.csv
